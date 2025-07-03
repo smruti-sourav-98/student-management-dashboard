@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Management Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="container">
+  <h2>🎓 Student Management Dashboard</h2>
+
+  <div class="form-row">
+    <input type="text" id="name" placeholder="Name" />
+    <input type="text" id="regNo" placeholder="Reg No" />
+    <input type="text" id="dept" placeholder="Department" />
+    <input type="text" id="year" placeholder="Year" />
+    <input type="text" id="marks" placeholder="Marks" />
+    <button onclick="addOrUpdateStudent()">Save</button>
+  </div>
+
+  <input type="text" id="search" placeholder="🔍 Search by Name or Reg No" oninput="displayStudents()" />
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Reg No</th>
+        <th>Dept</th>
+        <th>Year</th>
+        <th>Marks</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
